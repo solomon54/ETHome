@@ -1,0 +1,17 @@
+%header {
+  font-family: $font-display;
+  font-weight: 400;
+}
+.header--1 {
+  @extend header !optional;
+}
+.header--2 {
+  @extend header !optional;
+}
+.header--3 {
+  @extend header !optional;
+}
+.header--4 {
+  @extend header !optional;
+  font-size: 1.8rem;
+}

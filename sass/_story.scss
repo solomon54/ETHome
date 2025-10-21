@@ -2,11 +2,31 @@
   &__picture {
     background-color: $color-primary;
     grid-column: full-start / col-end 5;
+
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    align-items: center;
+    background-image: linear-gradient(rgba($color-primary, 0.3)),
+      url(../img/back.jpg);
   }
+
+  &__photo-1 {
+    width: 100%;
+    grid-column: 2 / span 4;
+    grid-row: 2 / span 4;
+  }
+  &__photo-2 {
+    width: 110%;
+    grid-column: 4 / span 3;
+    grid-row: 4 / span 3;
+    z-index: 1;
+  }
+
   &__content {
     background-color: $color-grey-light-1;
     grid-column: col-end 5 / full-end;
-    padding: 4vw;
+    padding: 10vw 6rem;
 
     display: grid;
     align-content: center;

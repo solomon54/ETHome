@@ -15,12 +15,14 @@
     width: 100%;
     grid-column: 2 / span 4;
     grid-row: 2 / span 4;
+    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.5);
   }
   &__photo-2 {
     width: 110%;
     grid-column: 4 / span 3;
     grid-row: 4 / span 3;
     z-index: 1;
+    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.5);
   }
 
   &__content {

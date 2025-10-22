@@ -90,6 +90,29 @@ body {
   grid-row: 1/-1;
 }
 
+.sidebar__nav {
+  border: none;
+  border-radius: 0;
+  height: 0.2rem;
+  width: 5rem;
+  background-color: #f9f7f6;
+  margin-top: 3rem;
+  margin-left: 1.5rem;
+}
+.sidebar__nav::before, .sidebar__nav::after {
+  display: block;
+  content: "";
+  height: 0.2rem;
+  width: 5rem;
+  background-color: #f9f7f6;
+}
+.sidebar__nav::before {
+  transform: translatey(-1.5rem);
+}
+.sidebar__nav::after {
+  transform: translatey(1.3rem);
+}
+
 .header {
   background-color: #54483a;
   grid-column: full-start/col-end 6;

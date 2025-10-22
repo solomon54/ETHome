@@ -3,3 +3,28 @@
   grid-column: sidebar-start / sidebar-end;
   grid-row: 1/-1;
 }
+.sidebar__nav {
+  border: none;
+  border-radius: 0;
+
+  height: 0.2rem;
+  width: 5rem;
+  background-color: $color-grey-light-1;
+  margin-top: 3rem;
+  margin-left: 1.5rem;
+
+  &::before,
+  &::after {
+    display: block;
+    content: "";
+    height: 0.2rem;
+    width: 5rem;
+    background-color: $color-grey-light-1;
+  }
+  &::before {
+    transform: translatey(-1.5rem);
+  }
+  &::after {
+    transform: translatey(1.3rem);
+  }
+}

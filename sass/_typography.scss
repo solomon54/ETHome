@@ -4,6 +4,9 @@
 }
 .header-1 {
   @extend header !optional;
+  font-size: 3.5rem;
+  color: $color-grey-light-1;
+  line-height: 1;
 }
 .header-2 {
   @extend header !optional;
@@ -20,7 +23,7 @@
 }
 .header-3 {
   @extend header !optional;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   color: $color-primary;
   text-transform: uppercase;
 }

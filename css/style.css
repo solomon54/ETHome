@@ -24,6 +24,12 @@ body {
   grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
 }
 
+.header-1 {
+  font-size: 3.5rem;
+  color: #f9f7f6;
+  line-height: 1;
+}
+
 .header-2 {
   font-size: 3rem;
   font-style: italic;
@@ -37,7 +43,7 @@ body {
 }
 
 .header-3 {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   color: #c69963;
   text-transform: uppercase;
 }
@@ -116,6 +122,48 @@ body {
 .header {
   background-color: #54483a;
   grid-column: full-start/col-end 6;
+  background-image: linear-gradient(rgba(16, 29, 44, 0.7)), url(../img/hero.jpeg);
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  grid-template-rows: 2fr max-content 4rem;
+  grid-template-columns: max-content;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+.header__logo {
+  height: 3rem;
+  justify-self: center;
+}
+.header__btn {
+  align-self: start;
+  justify-self: start;
+}
+.header__seanon-text {
+  color: #f9f7f6;
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  gap: 1.5rem;
+  align-items: center;
+  font-size: 1.5rem;
+  margin: 5rem 0;
+}
+.header__seanon-text::before, .header__seanon-text::after {
+  content: "";
+  height: 0.1rem;
+  background-color: currentColor;
+}
+.header__seanon-logos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 5rem;
+}
+.header__seanon-logos img {
+  justify-self: center;
+  height: 2.5rem;
+  filter: brightness(0.8);
 }
 
 .realtors {

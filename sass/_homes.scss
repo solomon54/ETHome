@@ -26,9 +26,12 @@
     grid-row: 1/2;
     cursor: pointer;
     transition: all 0.5s;
-    margin-left: auto;
 
-    justify-self: end;
+    justify-items: end;
+
+    @media screen and (max-width: $bp-largest) {
+      transform: translateX(-3vw);
+    }
   }
   &__name {
     width: 80%;

@@ -1,6 +1,9 @@
 .footer {
   background-color: $color-secondary;
   grid-column: sidebar-start/full-end;
+  @media only screen and (max-width: $bp-large) {
+    grid-column: full-start/full-end;
+  }
 }
 .nav {
   margin: 3rem;

@@ -10,6 +10,11 @@ html {
   font-size: 62.5%;
   box-sizing: border-box;
 }
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
 
 body {
   font-family: "Nunito", sans-serif;
@@ -22,6 +27,12 @@ body {
   display: grid;
   grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
   grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+}
+@media only screen and (max-width: 56.25em) {
+  .container {
+    grid-template-rows: 6rem 80vh min-content 40vw repeat(3, min-content);
+    grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+  }
 }
 
 .header-1 {
@@ -95,6 +106,12 @@ body {
   grid-column: sidebar-start/sidebar-end;
   grid-row: 1/-1;
 }
+@media only screen and (max-width: 56.25em) {
+  .sidebar {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+  }
+}
 
 .sidebar__nav {
   border: none;
@@ -125,12 +142,13 @@ body {
   background-image: linear-gradient(rgba(16, 29, 44, 0.7)), url(../img/hero.jpeg);
   background-size: cover;
   background-position: center;
+  padding-top: 3rem;
+  padding-left: 4rem;
   display: grid;
-  grid-template-rows: 2fr max-content 4rem;
-  grid-template-columns: max-content;
+  grid-template-rows: 1fr max-content minmax(6rem, min-content) 1fr;
+  grid-template-columns: minmax(min-content, max-content);
   gap: 1.5rem;
   justify-content: center;
-  align-items: center;
 }
 .header__logo {
   height: 3rem;
@@ -162,7 +180,8 @@ body {
 }
 .header__seanon-logos img {
   justify-self: center;
-  height: 2.5rem;
+  max-height: 2.5rem;
+  max-width: 100%;
   filter: brightness(0.8);
 }
 
@@ -255,6 +274,11 @@ body {
   align-content: center;
   justify-items: start;
 }
+@media only screen and (max-width: 56.25em) {
+  .story__content {
+    padding: 1.5rem 5rem;
+  }
+}
 .story__text {
   font-size: 1.5rem;
   font-style: italic;
@@ -287,8 +311,12 @@ body {
   grid-row: 1/2;
   cursor: pointer;
   transition: all 0.5s;
-  margin-left: auto;
-  justify-self: end;
+  justify-items: end;
+}
+@media screen and (max-width: 75em) {
+  .home__like {
+    transform: translateX(-3vw);
+  }
 }
 .home__name {
   width: 80%;
@@ -408,6 +436,11 @@ figure {
 .footer {
   background-color: #101d2c;
   grid-column: sidebar-start/full-end;
+}
+@media only screen and (max-width: 56.25em) {
+  .footer {
+    grid-column: full-start/full-end;
+  }
 }
 
 .nav {

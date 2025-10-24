@@ -18,7 +18,7 @@ $font-display: "Josefin Sans", sans-serif;
 $bp-largest: 75em; // 1200px
 $bp-large: 62.5em; // 1000px
 $bp-medium: 50em; // 800px
-$bp-small: 34.5em; //552px
+$bp-small: 37.5em; //552px
 
 *,
 *::before,
@@ -42,6 +42,7 @@ body {
   color: $color-grey-dark-2;
   font-weight: 300;
   line-height: 1.6;
+  overflow-x: hidden;
 }
 .container {
   display: grid;

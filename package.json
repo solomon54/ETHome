@@ -1,7 +1,7 @@
 {
-  "name": "nexter",
+  "name": "ETHome",
   "version": "1.0.0",
-  "description": "Nexter webpage",
+  "description": "ETHome webpage",
   "main": "index.js",
   "scripts": {
     "watch:sass": "sass sass/main.scss css/style.css -w",
